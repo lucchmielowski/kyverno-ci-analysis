@@ -78,8 +78,15 @@ func main() {
 		logError("Failed to create output directory: %v", err)
 		os.Exit(1)
 	}
+	// Create images subdirectory
+	imagesDir := filepath.Join(absOutputDir, "images")
+	if err = os.MkdirAll(imagesDir, 0755); err != nil {
+		logError("Failed to create images directory: %v", err)
+		os.Exit(1)
+	}
 	outputDir = absOutputDir
 	logInfo("Reports will be saved to: %s", outputDir)
+	logInfo("Images will be saved to: %s", imagesDir)
 
 	// Calculate date range
 	var rangeStart, rangeEnd time.Time
@@ -371,6 +378,9 @@ func generateWeekReport(outputFile string, week WeekInfo, allRuns []types.Workfl
 	}
 	defer f.Close()
 
+	// Set up images directory
+	imagesDir := filepath.Join(filepath.Dir(outputFile), "images")
+
 	// Filter runs for this week
 	weekRuns := filterRunsForWeek(allRuns, week)
 
@@ -460,19 +470,19 @@ func generateWeekReport(outputFile string, week WeekInfo, allRuns []types.Workfl
 	// P95 Latency over time
 	fmt.Fprintf(f, "#### P95 Latency Over Time (minutes)\n\n")
 	p95ImagePath := fmt.Sprintf("p95-duration-week-%d-%02d.png", week.Year, week.WeekNumber)
-	if err := generateLineGraphImage(filepath.Join(filepath.Dir(outputFile), p95ImagePath), dailyStatsList, func(s types.DailyStats) float64 { return s.P95Duration }, "P95 Duration (minutes)", "Date", "Duration (min)"); err != nil {
+	if err := generateLineGraphImage(filepath.Join(imagesDir, p95ImagePath), dailyStatsList, func(s types.DailyStats) float64 { return s.P95Duration }, "P95 Duration (minutes)", "Date", "Duration (min)"); err != nil {
 		logError("Failed to generate P95 duration graph: %v", err)
 	} else {
-		fmt.Fprintf(f, "![P95 Duration](./%s)\n\n", p95ImagePath)
+		fmt.Fprintf(f, "![P95 Duration](./images/%s)\n\n", p95ImagePath)
 	}
 
 	// Flaky rate over time
 	fmt.Fprintf(f, "#### Flaky Rate Over Time (%%)\n\n")
 	flakyImagePath := fmt.Sprintf("flaky-rate-week-%d-%02d.png", week.Year, week.WeekNumber)
-	if err := generateLineGraphImage(filepath.Join(filepath.Dir(outputFile), flakyImagePath), dailyStatsList, func(s types.DailyStats) float64 { return s.FlakyRate }, "Flaky Rate (%)", "Date", "Flaky Rate (%)"); err != nil {
+	if err := generateLineGraphImage(filepath.Join(imagesDir, flakyImagePath), dailyStatsList, func(s types.DailyStats) float64 { return s.FlakyRate }, "Flaky Rate (%)", "Date", "Flaky Rate (%)"); err != nil {
 		logError("Failed to generate flaky rate graph: %v", err)
 	} else {
-		fmt.Fprintf(f, "![Flaky Rate](./%s)\n\n", flakyImagePath)
+		fmt.Fprintf(f, "![Flaky Rate](./images/%s)\n\n", flakyImagePath)
 	}
 
 	// PR-triggered runs trends
@@ -497,19 +507,19 @@ func generateWeekReport(outputFile string, week WeekInfo, allRuns []types.Workfl
 			// P95 Latency for PR runs
 			fmt.Fprintf(f, "#### P95 Latency Over Time - PR Runs (minutes)\n\n")
 			prP95ImagePath := fmt.Sprintf("p95-duration-pr-week-%d-%02d.png", week.Year, week.WeekNumber)
-			if err := generateLineGraphImage(filepath.Join(filepath.Dir(outputFile), prP95ImagePath), prDailyStatsList, func(s types.DailyStats) float64 { return s.P95Duration }, "P95 Duration - PR Runs (minutes)", "Date", "Duration (min)"); err != nil {
+			if err := generateLineGraphImage(filepath.Join(imagesDir, prP95ImagePath), prDailyStatsList, func(s types.DailyStats) float64 { return s.P95Duration }, "P95 Duration - PR Runs (minutes)", "Date", "Duration (min)"); err != nil {
 				logError("Failed to generate PR P95 duration graph: %v", err)
 			} else {
-				fmt.Fprintf(f, "![P95 Duration - PR Runs](./%s)\n\n", prP95ImagePath)
+				fmt.Fprintf(f, "![P95 Duration - PR Runs](./images/%s)\n\n", prP95ImagePath)
 			}
 
 			// Flaky rate for PR runs
 			fmt.Fprintf(f, "#### Flaky Rate Over Time - PR Runs (%%)\n\n")
 			prFlakyImagePath := fmt.Sprintf("flaky-rate-pr-week-%d-%02d.png", week.Year, week.WeekNumber)
-			if err := generateLineGraphImage(filepath.Join(filepath.Dir(outputFile), prFlakyImagePath), prDailyStatsList, func(s types.DailyStats) float64 { return s.FlakyRate }, "Flaky Rate - PR Runs (%)", "Date", "Flaky Rate (%)"); err != nil {
+			if err := generateLineGraphImage(filepath.Join(imagesDir, prFlakyImagePath), prDailyStatsList, func(s types.DailyStats) float64 { return s.FlakyRate }, "Flaky Rate - PR Runs (%)", "Date", "Flaky Rate (%)"); err != nil {
 				logError("Failed to generate PR flaky rate graph: %v", err)
 			} else {
-				fmt.Fprintf(f, "![Flaky Rate - PR Runs](./%s)\n\n", prFlakyImagePath)
+				fmt.Fprintf(f, "![Flaky Rate - PR Runs](./images/%s)\n\n", prFlakyImagePath)
 			}
 		}
 	}
