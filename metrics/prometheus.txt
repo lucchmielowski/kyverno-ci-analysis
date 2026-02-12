@@ -1,0 +1,244 @@
+# HELP github_actions_success_rate Success rate percentage
+# TYPE github_actions_success_rate gauge
+github_actions_success_rate{repo="kyverno/kyverno"} 67.17 1770914740
+
+# HELP github_actions_flaky_rate Flaky test rate percentage
+# TYPE github_actions_flaky_rate gauge
+github_actions_flaky_rate{repo="kyverno/kyverno"} 10.56 1770914740
+
+# HELP github_actions_avg_duration_minutes Average duration in minutes
+# TYPE github_actions_avg_duration_minutes gauge
+github_actions_avg_duration_minutes{repo="kyverno/kyverno"} 5.66 1770914740
+
+# HELP github_actions_p95_duration_minutes P95 duration in minutes
+# TYPE github_actions_p95_duration_minutes gauge
+github_actions_p95_duration_minutes{repo="kyverno/kyverno"} 23.27 1770914740
+
+# HELP github_actions_total_runs Total number of runs
+# TYPE github_actions_total_runs counter
+github_actions_total_runs{repo="kyverno/kyverno"} 1931 1770914740
+
+# HELP github_actions_workflow_success_rate Workflow success rate percentage
+# TYPE github_actions_workflow_success_rate gauge
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Issue and PR comment commands"} 99.73 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="PR Labelling"} 98.94 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="report-on-vulnerabilities"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1234792007"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1226749487"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /. for github.com/theupdateframework/go-tuf/v2 - Update #1221869633"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Build images"} 77.83 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1239356511"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1222766346"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="helm-release"} 70.59 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="FOSSA"} 98.08 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Tests"} 72.50 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="helm-test"} 80.60 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Cleanup Stale Branches"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /., /hack/api-group-resources, /hack/controller-gen #1240471830"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1233459947"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Caching"} 99.52 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Check actions"} 89.72 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1241844976"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in / for sigs.k8s.io/kustomize/kyaml - Update #1239324878"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1222697518"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Scorecards supply-chain security"} 99.05 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1229980995"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Cherry-pick on PR merge"} 78.59 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Build devcontainer"} 77.44 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /hack/api-group-resources, /hack/controller-gen #1242011540"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1241802776"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Publish images"} 21.45 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Verify codegen"} 65.46 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1225556307"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1224077642"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Conformance tests"} 47.69 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1236006321"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1231803387"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="pages build and deployment"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Retry workflow"} 26.92 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1240455585"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1225555637"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="cli"} 75.52 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1226749057"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Dummy"} 0.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1222511048"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Load Tests"} 58.21 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="DCO"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Copilot code review"} 0.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1224078085"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1222510595"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Lint"} 69.64 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1239324304"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1239287639"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1233459341"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="check-milestone-label"} 46.57 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1238975365"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1237668019"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1236006758"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1234791448"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1232469430"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1226763748"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Codecov"} 0.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="PR update"} 84.36 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1241802361"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /. for github.com/go-git/go-git/v5 - Update #1238921842"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1237669248"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="releaser"} 85.71 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1226421976"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Sonarcloud workflow"} 98.91 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1239287160"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1231802878"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1230098573"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1240455037"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1229982392"} 100.00 1770914740
+github_actions_workflow_success_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1224466957"} 100.00 1770914740
+
+# HELP github_actions_workflow_flaky_rate Workflow flaky rate percentage
+# TYPE github_actions_workflow_flaky_rate gauge
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Load Tests"} 5.91 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="DCO"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Copilot code review"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1224078085"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1222510595"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Lint"} 7.79 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1239324304"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1239287639"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1233459341"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="check-milestone-label"} 10.65 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1238975365"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1237668019"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1236006758"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1234791448"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1232469430"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1226763748"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Codecov"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="PR update"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1241802361"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /. for github.com/go-git/go-git/v5 - Update #1238921842"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1237669248"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="releaser"} 14.29 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1226421976"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Sonarcloud workflow"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1239287160"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1231802878"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1230098573"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1240455037"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1229982392"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1224466957"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Issue and PR comment commands"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="PR Labelling"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="report-on-vulnerabilities"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1234792007"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1226749487"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /. for github.com/theupdateframework/go-tuf/v2 - Update #1221869633"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Build images"} 7.79 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1239356511"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1222766346"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="helm-release"} 5.88 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="FOSSA"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Tests"} 6.78 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="helm-test"} 20.26 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Cleanup Stale Branches"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /., /hack/api-group-resources, /hack/controller-gen #1240471830"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1233459947"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Caching"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Check actions"} 7.79 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1241844976"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in / for sigs.k8s.io/kustomize/kyaml - Update #1239324878"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1222697518"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Scorecards supply-chain security"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1229980995"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Cherry-pick on PR merge"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Build devcontainer"} 14.75 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /hack/api-group-resources, /hack/controller-gen #1242011540"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1241802776"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Publish images"} 0.36 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Verify codegen"} 7.79 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1225556307"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1224077642"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Conformance tests"} 40.58 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1236006321"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1231803387"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="pages build and deployment"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Retry workflow"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1240455585"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1225555637"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="cli"} 7.95 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1226749057"} 0.00 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="Dummy"} 18.52 1770914740
+github_actions_workflow_flaky_rate{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1222511048"} 0.00 1770914740
+
+# HELP github_actions_workflow_p95_duration_minutes Workflow P95 duration in minutes
+# TYPE github_actions_workflow_p95_duration_minutes gauge
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Load Tests"} 37.03 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="DCO"} 0.13 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Copilot code review"} 9.80 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1224078085"} 0.82 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1222510595"} 1.28 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Lint"} 9.88 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1239324304"} 0.70 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1239287639"} 2.22 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1233459341"} 1.47 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="check-milestone-label"} 9.12 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1238975365"} 1.02 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1237668019"} 1.45 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1236006758"} 1.88 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1234791448"} 1.48 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1232469430"} 1.03 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1226763748"} 1.07 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Codecov"} 4.67 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="PR update"} 0.68 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1241802361"} 1.38 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /. for github.com/go-git/go-git/v5 - Update #1238921842"} 1.52 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1237669248"} 1.27 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="releaser"} 379.85 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1226421976"} 0.95 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Sonarcloud workflow"} 4.00 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1239287160"} 1.50 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1231802878"} 1.70 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1230098573"} 0.97 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1240455037"} 1.33 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1229982392"} 1.93 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1224466957"} 0.82 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Issue and PR comment commands"} 2.17 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="PR Labelling"} 4.23 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="report-on-vulnerabilities"} 0.77 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1234792007"} 1.25 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1226749487"} 1.93 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /. for github.com/theupdateframework/go-tuf/v2 - Update #1221869633"} 1.32 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Build images"} 8.78 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1239356511"} 0.50 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1222766346"} 0.83 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="helm-release"} 6.90 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="FOSSA"} 1.88 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Tests"} 21.02 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="helm-test"} 13.70 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Cleanup Stale Branches"} 0.25 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /., /hack/api-group-resources, /hack/controller-gen #1240471830"} 0.75 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1233459947"} 1.35 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Caching"} 12.98 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Check actions"} 3.93 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1241844976"} 0.72 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in / for sigs.k8s.io/kustomize/kyaml - Update #1239324878"} 0.58 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /. #1222697518"} 1.52 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Scorecards supply-chain security"} 1.68 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1229980995"} 1.62 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Cherry-pick on PR merge"} 0.62 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Build devcontainer"} 13.83 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Configured Graph Update: go_modules in /hack/api-group-resources, /hack/controller-gen #1242011540"} 0.53 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1241802776"} 1.67 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Publish images"} 26.20 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Verify codegen"} 23.17 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1225556307"} 1.27 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1224077642"} 1.25 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Conformance tests"} 56.55 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1236006321"} 1.47 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1231803387"} 2.80 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="pages build and deployment"} 0.80 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Retry workflow"} 0.20 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1240455585"} 1.97 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1225555637"} 1.53 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="cli"} 11.77 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="github_actions in /., /.github/actions/* - Update #1226749057"} 1.83 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="Dummy"} 0.62 1770914740
+github_actions_workflow_p95_duration_minutes{repo="kyverno/kyverno",workflow="go_modules in /., /hack/api-group-resources, /hack/controller-gen - Update #1222511048"} 1.70 1770914740
