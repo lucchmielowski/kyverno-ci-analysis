@@ -1,0 +1,50 @@
+name: Weekly Report Generation
+
+on:
+  schedule:
+    # Run every Sunday at 8 PM UTC (Sunday evening)
+    - cron: '0 20 * * 0'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write # Required to commit and push changes
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+      
+      - name: Build reports tool
+        run: go build -o bin/reports ./pkg/reports
+      
+      - name: Generate weekly report
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          ./bin/reports -last-week
+      
+      - name: Check for changes
+        id: check-changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add reports/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.changed == 'true'
+        run: |
+          git commit -m "chore: generate weekly report for $(date -u +%Y-W%V)"
+          git push
