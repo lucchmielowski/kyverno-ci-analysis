@@ -203,17 +203,3 @@ kyverno-ci-analysis/
 ├── go.mod
 └── README.md
 ```
-
-## Dependencies
-
-- [go-github](https://github.com/google/go-github): GitHub API client
-- [gonum/plot](https://github.com/gonum/plot): Graph generation
-- [golang.org/x/oauth2](https://golang.org/x/oauth2): OAuth2 authentication
-
-## License
-
-[Add your license here]
-
-## Contributing
-
-[Add contribution guidelines here]
